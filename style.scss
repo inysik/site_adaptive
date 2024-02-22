@@ -1,0 +1,163 @@
+$colorSelectSite: #F16D7F;
+$widthSite: 1600px;
+$blackbloc: #222;
+$contentWidth: 1140px;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    // This is the shit from the lecture    
+    //     padding-left: calc(50% - $widthSite / 2);
+    //     padding-right: calc(50% - $widthSite / 2);
+    max-width: $contentWidth;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: $blackbloc;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: calc(100vw - 20px);
+
+
+
+}
+
+.top-head {
+    background-color: #f8f3F4;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 41px;
+
+}
+
+.top-head_heading {
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+
+    text-align: left;
+    color: $colorSelectSite;
+}
+
+.breadcrumbs_link {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    color: #636363;
+    text-align: left;
+
+
+}
+
+.breadcrumbs_link_site {
+
+    font-weight: 700px;
+
+    color: $colorSelectSite;
+
+
+
+}
+
+.card {
+    &_gallery {
+        background-color: #F7F7F7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &_content {
+        transform: translateY(-65px);
+        padding-top: 64px;
+        padding-bottom: 64px;
+        background-color: #FFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+    }
+
+    &_title {
+        color: $colorSelectSite;
+
+    }
+
+    &_palochka {
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    &_title-brends {
+        margin-bottom: 48px;
+    }
+
+    &_text {
+        margin-bottom: 32px;
+    }
+
+    &_prices {
+        margin-bottom: 132px;
+    }
+
+    &_nav-menu {
+        display: flex;
+        gap: 23px;
+
+        span {
+            align-items: center;
+            display: flex;
+        }
+
+        svg {
+            margin-left: 9px;
+
+
+        }
+    }
+    &_add{
+        margin-top: 48px;
+        display: flex;
+        padding:14px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        color:$colorSelectSite;
+        font-family: Lato;
+        font-size: 16px;
+        border-color: $colorSelectSite;
+        background: transparent;
+        padding-right: 39px;
+    }
+}
